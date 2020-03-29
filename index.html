@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            body, html {
+                height: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                margin:0;
+                background-color: white;
+                color:#202020;
+                text-align: center;
+                font-family: Arial;
+                /*scroll-behavior: smooth;*/
+            }
+            .cover1 {
+                background-image: url("cover-purple.png");
+            }
+            .cover2 {
+                background-image: url("cover-original-yellow.png");
+            }
+            .cover3 {
+                background-image: url("cover-light-blue.png");
+            }
+            .cover4 {
+                background-image: url("cover-orange-red.png");
+            }
+            .cover5 {
+                background-image: url("cover-light-green.png");
+            }
+            .cover6 {
+                background-image: url("cover-pink.png");
+            }
+            .paralax {
+                /* Set a specific height */
+                height: 30%;
+            
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .article {
+                padding: 1em;
+            }
+            .title {
+                color: #ffc414;
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+            .video-container {
+                position:relative;
+                padding-bottom:56.25%;
+                padding-top:30px;
+                height:0;
+                overflow:hidden;
+            }
+            .video-container iframe {
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+            }
+            a {
+                color: #808080;
+                text-decoration: none;
+            }
+            #header {
+                position: relative;
+                z-index: 2;
+                background-color: #202020;
+                color: white;
+            }
+            #scrolltop {
+                position: fixed;
+                top: 1em;
+                right: 40px;
+                width: 20px;
+                height: 1em;
+                z-index: 1;
+            }
+        </style>
+        <script>
+            function scrollto(selector) {
+                document.querySelector(selector).scrollIntoView({ 
+                    behavior: 'smooth' 
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <div id="scrolltop">
+            <span><a href="javascript:scrollto('#header')"><img src="up.png" height="40px" width="40px"/></a></span>
+        </div>
+        <div class="article" id="header">
+            <h1>STEREOFOAM</h1>
+            <span><a class="title" href="javascript:scrollto('#listen')">LISTEN</a></span>
+            <span><a class="title" href="javascript:scrollto('#pastevents')">PAST EVENTS</a></span>
+            <span><a class="title" href="javascript:scrollto('#gallery')">GALLERY</a></span>
+            <span><a class="title" href="javascript:scrollto('#contact')">CONTACT</a></span>
+        </div>
+        <div class="paralax cover1"></div>
+        <div class="article">
+            <h3>Stereofoam is a group of musicians</h3>
+            <h3>aiming to bring positive energy and good vibes</h3>
+            <h3>to all who will listen</h3>
+            <br/>
+            <h3>Our blues and funk roots have evolved</h3>
+            <h3>and as we grow
+            <h3>we hope to never stop reaching</h3>
+        </div>
+        <div class="paralax cover2"></div>
+        <div class="article" id="listen">
+            <h1 class="title">LISTEN</h1>
+            <iframe width="100%" height="310" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Fusers%2F449874816&amp;callback=YUI.Env.JSONP.yui_3_17_2_1_1566530862668_253063&amp;wmode=opaque"></iframe>
+        </div>
+        <div class="paralax cover3"></div>
+        <div class="article" id="pastevents">
+            <h1 class="title">PAST EVENTS</h1>
+            <h2>A Very Special Evening</h2>
+            <div>Celebrating the Abbey Road 50th Anniversary</div>
+            <div>Milk Bar on Haight</div>
+            <br/>
+            <div class="video-container">
+                <iframe width="90%" src="https://www.youtube.com/embed/videoseries?list=PL7z-Qi7Dc2MiPTp-8Xc-QPYFWLZiClm_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="paralax cover4"></div>
+        <div class="article" id="gallery">
+            <h1 class="title">GALLERY</h1>
+            <div class='embedsocial-instagram' data-ref="bf0e5dbb016312eb6c8e014358f802939ace4c2f"></div>
+            <script>
+            (function(d, s, id){
+                var js;
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://embedsocial.com/embedscript/in.js";
+                d.getElementsByTagName("head")[0].appendChild(js);
+            }(document, "script", "EmbedSocialInstagramScript"));
+            </script>
+        </div>
+        <div class="paralax cover5"></div>
+        <div class="article" id="contact">
+            <h1 class="title">CONTACT</h1>
+            <h2>General</h2>
+            <div>Andrew Young</div>
+            <div>andrew.young007@gmail.com</div>
+            <br/>
+            <h2>Booking</h2>
+            <div>Steven Jenny</div>
+            <div>steven.jenny.94@gmail.com</div>
+        </div>
+        <div class="paralax cover6"></div>
+        <div class="article" id="links" style="background-color: #202020;">
+            <h2>
+                <span class="title">
+                    <a href="https://soundcloud.com/stereofoam-sf">
+                        <b>SoundCloud</b>
+                    </a>
+                </span>
+                
+                <span class="title">
+                <a href="https://www.facebook.com/stereofoamsf/">
+                        <b>Facebook</b>
+                    </a>
+                </span>
+
+                <span class="title">
+                    <a href="https://www.instagram.com/stereofoamsf">
+                        <b>Instagram</b>
+                    </a>
+                </span>
+            </h2>
+        </div>
+    </body>
+</html>
