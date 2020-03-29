@@ -16,29 +16,24 @@
                 background-repeat: no-repeat;
                 background-size: cover;
             }
+            @media only screen and (max-device-width: 1366px) {
+            }
             .cover1 {
-                position:relative;
-                /*background-image: url("cover-purple.png");*/
                 background: rgba(157, 0, 255, 0.25);
             }
             .cover2 {
-                /*background-image: url("cover-original-yellow.png");*/
                 background: rgba(255, 251, 0, 0.25);
             }
             .cover3 {
-                /*background-image: url("cover-light-blue.png");*/
                 background: rgba(0, 255, 247, 0.20)
             }
             .cover4 {
-                /*background-image: url("cover-orange-red.png");*/
                 background: rgba(255, 55, 0, 0.25);
             }
             .cover5 {
-                /*background-image: url("cover-light-green.png");*/
                 background: rgba(81, 255, 0, 0.20);
             }
             .cover6 {
-                /*background-image: url("cover-pink.png");*/
                 background: rgba(255, 0, 140, 0.20);
             }
             .paralax {
@@ -52,6 +47,12 @@
                 background-size: cover;
             }
             @media only screen and (max-device-width: 1366px) {
+                body, html {
+                    background-attachment:local;
+                    background-position: top;
+                    background-repeat: repeat-y;
+                    background-size:contain;
+                }
                 .parallax {
                     background-attachment: scroll;
                 }
