@@ -8,29 +8,38 @@
                 padding-left: 0;
                 padding-right: 0;
                 margin:0;
-                background-color: white;
-                color:#202020;
                 text-align: center;
                 font-family: Arial;
-                /*scroll-behavior: smooth;*/
+                background-image: url("cover-white.png");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
             .cover1 {
-                background-image: url("cover-purple.png");
+                position:relative;
+                /*background-image: url("cover-purple.png");*/
+                background: rgba(157, 0, 255, 0.25);
             }
             .cover2 {
-                background-image: url("cover-original-yellow.png");
+                /*background-image: url("cover-original-yellow.png");*/
+                background: rgba(255, 251, 0, 0.25);
             }
             .cover3 {
-                background-image: url("cover-light-blue.png");
+                /*background-image: url("cover-light-blue.png");*/
+                background: rgba(0, 255, 247, 0.20)
             }
             .cover4 {
-                background-image: url("cover-orange-red.png");
+                /*background-image: url("cover-orange-red.png");*/
+                background: rgba(255, 55, 0, 0.25);
             }
             .cover5 {
-                background-image: url("cover-light-green.png");
+                /*background-image: url("cover-light-green.png");*/
+                background: rgba(81, 255, 0, 0.20);
             }
             .cover6 {
-                background-image: url("cover-pink.png");
+                /*background-image: url("cover-pink.png");*/
+                background: rgba(255, 0, 140, 0.20);
             }
             .paralax {
                 /* Set a specific height */
@@ -48,6 +57,8 @@
                 }
             }
             .article {
+                background-color: white;
+                color:#202020;
                 padding: 1em;
             }
             .title {
@@ -81,10 +92,10 @@
             }
             #scrolltop {
                 position: fixed;
-                top: 1em;
-                right: 40px;
-                width: 20px;
-                height: 1em;
+                top: 2vh;
+                right: 2vh;
+                height: 6vh;
+                width: 6vh;
                 z-index: 1;
             }
         </style>
@@ -99,20 +110,22 @@
     </head>
     <body>
         <div id="scrolltop">
-            <span><a href="javascript:scrollto('#header')"><img src="up.png" height="40px" width="40px"/></a></span>
+            <span><a href="javascript:scrollto('#header')"><img src="up.png" height="100%" width="100%"/></a></span>
         </div>
         <div class="article" id="header">
             <h1>STEREOFOAM</h1>
-            <span><a class="title" href="javascript:scrollto('#listen')">LISTEN</a></span>
-            <span><a class="title" href="javascript:scrollto('#pastevents')">PAST EVENTS</a></span>
-            <span><a class="title" href="javascript:scrollto('#gallery')">GALLERY</a></span>
-            <span><a class="title" href="javascript:scrollto('#contact')">CONTACT</a></span>
+            <h2>
+                <span><a class="title" href="javascript:scrollto('#listen')">LISTEN</a></span>
+                <span><a class="title" href="javascript:scrollto('#pastevents')">PAST EVENTS</a></span>
+                <span><a class="title" href="javascript:scrollto('#gallery')">GALLERY</a></span>
+                <span><a class="title" href="javascript:scrollto('#contact')">CONTACT</a></span>
+            </h2>
         </div>
         <div class="paralax cover1"></div>
         <div class="article">
             <h3>Stereofoam is a group of musicians</h3>
-            <h3>aiming to bring positive energy and good vibes</h3>
-            <h3>to all who will listen</h3>
+            <h3>aiming to bring positive energy</h3>
+            <h3>and good vibes to all who will listen</h3>
             <br/>
             <h3>Our blues and funk roots have evolved</h3>
             <h3>and as we grow
