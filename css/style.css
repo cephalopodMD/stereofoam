@@ -760,7 +760,7 @@ hr{
 	font-weight: 700;
 	font-size: 20px;
     line-height: 40px;
-    padding: 5px;
+    padding: 0, 5px, 5px, 5px;
 }
 
 .events .events-item .figure .event-date .emonth {font-size: 13px;}
